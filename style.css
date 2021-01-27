@@ -4,6 +4,7 @@
 	--green: #49aa26;
 	--light-green: #3dd705;
 	--red: #e92929;
+	--dark-green: #2d4a22;
 }
 
 * {
@@ -92,8 +93,45 @@ button:hover {
 }
 
 /* HEADER ====================== */
+.github-logo {
+	width: 80;
+	height: 80;
+	fill: #fff;
+	color: var(--dark-green);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
+}
+
 header {
-	background: #2d4a22;
+	background: var(--dark-green);
 	padding: 2rem 0 10rem;
 	text-align: center;
 }
